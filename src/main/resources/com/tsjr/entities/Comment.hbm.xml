@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.tsjr.entities">
+
+	<class name="Comment" table="comment">
+		<id name="id">
+			<generator class="native" />
+		</id>
+		<!-- Notice we're not storing the version property -->
+		<property name="message" />
+	</class>
+
+</hibernate-mapping>
